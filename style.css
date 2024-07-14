@@ -1,0 +1,64 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #39d7e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+#flipButton {
+  position: fixed;
+  bottom: 15%; 
+  padding: 14px 25px;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  background-color: #0b0e04;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#loading img {
+  width: 155px;
+  
+}
+
+#photoContainer {
+  display: none;
+  width: 390px; 
+  height:260px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game-name {
+  margin-bottom: 36px;
+}
+
+#photoContainer {
+  background-size: cover;
+}
+
+#flashMessage {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  animation: blinkAnimation 2s linear 2;
+  position: absolute;
+  width: 100%;
+  top: 300px;
+  z-index: 1000;
+}
+
+@keyframes blinkAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
